@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Android</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <center>
+        <Div>
+            <h1> PROXIMAMENTE</h1><br>
+            <h3>En esta parte se va a poder iniciar sesión ESTUNAHUR <br>
+            Para los alumnos que esten buscando particulares, o herramientas para el estudio <br>
+        programas para utilizar online ej PhotoShop, Illustrator, distintas calculadoras, paquete office, entre otros.</h3>
+        </Div>
+        <div id="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </center>
+
+    <center>
+
+
+        <div class="android-screen" id="androidScreen" style="display: none;">
+            <!-- Carpeta Diseño -->
+            <button class="android-folder" onclick="toggleFolder('design')">
+                <h1>DISEÑO</h1> <img src="img/diseño.png" alt="" height="80">
+            </button>
+            <div class="android-icons" id="design">
+                <button class="android-app" onclick="openUrl('https://www.photopea.com/')">
+                    <h2>PhotoShop</h2><img src="img/Adobe_Photoshop_CC_icon.svg.png" alt="" height="40">
+                </button>
+                <button class="android-app" onclick="openUrl('https://fixthephoto.com/es/illustrator-online.html')">
+                    <h2>Illustrator</h2><img src="img/Adobe_Illustrator_CC_icon.svg.png" alt="" height="40">
+                </button>
+                <button class="android-app" onclick="openUrl('https://sketch.io/sketchpad/es/')">
+                    <h2>Sketch</h2><img src="img/sketch.png" alt="" height="40">
+                </button>
+                <button class="android-app" onclick="openUrl('https://www.figma.com/')">
+                    <h2>Figma</h2><img src="img/figma.webp" alt="" height="40">
+                </button>
+               
+                <button class="android-app"
+                    onclick="openUrl('https://www.offidocs.com/newfilemanager01.php')">
+                    <h2>Blender</h2><img src="img/blender_logo_socket.png" height="40" alt="">
+                </button>
+
+
+
+                <!-- Repite para más aplicaciones -->
+            </div>
+
+            <!-- Carpeta Matemáticas -->
+            <button class="android-folder" onclick="toggleFolder('math')">
+                <h1>MATEMATICAS</h1><img src="img/matematica.png" alt="" height="80">
+            </button>
+            <div class="android-icons" id="math">
+                <button class="android-app" onclick="openUrl('https://www.desmos.com/scientific?lang=es')">
+                    <h2>Calculadora
+                        Cientifica</h2>
+                </button>
+                <button class="android-app" onclick="openUrl('https://www.desmos.com/3d?lang=es')">
+                    <h2>Calculadora
+                        3D</h2>
+                </button>
+                <button class="android-app" onclick="openUrl('https://www.desmos.com/calculator?lang=es')">
+                    <h2>Calculadora
+                        Grafica</h2>
+                </button>
+                <button class="android-app" onclick="openUrl('https://www.desmos.com/fourfunction?lang=es')">
+                    <h2>Calculadora
+                        Normal</h2>
+                </button>
+                <button class="android-app" onclick="openUrl('https://www.desmos.com/matrix?lang=es')">
+                    <h2>Calculadora
+                        Matrices</h2>
+                </button>
+                <button class="android-app" onclick="openUrl('https://www.desmos.com/geometry?lang=es')">
+                    <h2>Calculador
+                        Herramienta Geometría</h2>
+                </button>
+
+
+
+                <!-- Repite para más aplicaciones -->
+            </div>
+
+            <!-- Carpeta Trabajos -->
+            <button class="android-folder" onclick="toggleFolder('work')">
+                <h1>HERRAMIENTAS PARA ESTUDIANTES</h1> <img src="img/office.png" alt="" height="80">
+            </button>
+            <div class="android-icons" id="work">
+                <button class="android-app"
+                    onclick="openUrl('https://www.offidocs.com/loleaflet/dist/loleaflet.html?service=owncloudservice12&file_path=file:///var/www/html/weboffice/mydata/8074897970/NewDocuments/7177697667.docx&username=8074897970&ext=yes')">
+                    <h2>Oficce</h2>
+                </button>
+                
+            <button class="android-app"
+                onclick="openUrl('https://www.offidocs.com/public/?pdfurl=tot')">
+                <h2>PDF</h2>
+            </button>
+                <!-- Repite para más aplicaciones -->
+            </div>
+
+        </div>
+
+
+
+
+
+    </center>
+    <div id="app-container" class="app-container" style="display: none;">
+        <button class="close-btn" onclick="closeApp()">Cerrar</button>
+        <iframe id="app-iframe" class="app-iframe"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

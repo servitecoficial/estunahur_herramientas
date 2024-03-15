@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.android-screen {
+    background-color: #000;
+    padding: 20px;
+}
+
+.android-folder {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+}
+
+.android-icons {
+    display: none;
+}
+
+.android-icons button {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+}
+
+.app-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilos para la ventana de la aplicación */
+.app-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    max-width: 90%; /* Tamaño máximo de la ventana */
+    max-height: 90%; /* Tamaño máximo de la ventana */
+    overflow: auto; /* Habilitar desplazamiento si el contenido excede el tamaño máximo */
+}
+
+.app-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
